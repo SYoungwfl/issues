@@ -16,10 +16,7 @@ const issueList = (Issues) => {
         </IssueInfoRow>
         <UserInfoRow>
           <UserInfo>
-            작성자: {Issues.login},
-          </UserInfo>
-          <UserInfo>
-            작성일: {Issues.created_at}
+            작성자: {Issues.login}, 작성일: {Issues.created_at}
           </UserInfo>
         </UserInfoRow>
       </LeftColumn>

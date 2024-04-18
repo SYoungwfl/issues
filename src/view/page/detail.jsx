@@ -6,7 +6,7 @@ import myStore from "../../router/store";
 import Styled from "styled-components";
 
 const Detail = () => {
-  const { gitIssueNumber } = useParams();
+  const { IssueNumber } = useParams();
   const { gitIssue , setGitIssue} = React.useContext(myStore);
 
   React.useEffect(() => {
@@ -14,7 +14,7 @@ const Detail = () => {
   }, []);
 
   for (let issue of gitIssue) {
-    if (issue.number == gitIssueNumber) {
+    if (issue.number == IssueNumber) {
       return (
         <DetailContainer>
           <ContentWrapper>

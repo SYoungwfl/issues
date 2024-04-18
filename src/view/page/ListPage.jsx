@@ -22,7 +22,7 @@ const ListPage = () => {
             direction: 'desc'
           },
           headers: {
-            Authorization: "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 " + process.env.REACT_APP_API_KEY,
+            Authorization: "token " + process.env.REACT_APP_API_KEY,
             "Content-Type": "application/json",
           },
         }

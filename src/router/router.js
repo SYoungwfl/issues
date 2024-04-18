@@ -11,7 +11,7 @@ const router = createBrowserRouter([
     },
 
     {
-        path: "/detail/:gitIssueNumber",
+        path: "/detail/:IssueNumber",
         element: (
             <Detail/>
         ),
